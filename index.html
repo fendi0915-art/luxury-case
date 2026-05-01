@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>Fendi Violin Case</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+  body{
+    margin:0;
+    background:#0b0b0b;
+    color:#eaeaea;
+    font-family:'Playfair Display', serif;
+  }
+
+  /* NAV */
+  nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    gap:24px;
+    padding:14px;
+    background:rgba(11,11,11,0.7);
+    backdrop-filter: blur(10px);
+    font-size:12px;
+    letter-spacing:2px;
+    z-index:10;
+  }
+
+  nav a{
+    color:#d4af37;
+    text-decoration:none;
+  }
+
+  /* SECTIONS */
+  section{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:60px 20px;
+  }
+
+  h1,h2{
+    font-family:'Cinzel', serif;
+    letter-spacing:3px;
+    margin:0;
+  }
+
+  h1{
+    font-size:64px;
+    color:#d4af37;
+    animation: glow 4s ease-in-out infinite;
+  }
+
+  @keyframes glow{
+    0%,100%{text-shadow:0 0 10px rgba(212,175,55,0.2);}
+    50%{text-shadow:0 0 25px rgba(212,175,55,0.5);}
+  }
+
+  h2{
+    font-size:32px;
+    color:#d4af37;
+  }
+
+  p{
+    max-width:720px;
+    line-height:1.8;
+    color:#cfcfcf;
+  }
+
+  /* CARD */
+  .card{
+    border:1px solid rgba(212,175,55,0.25);
+    padding:26px;
+    max-width:720px;
+    margin-top:20px;
+    transition:0.4s;
+    background:rgba(255,255,255,0.02);
+    backdrop-filter: blur(6px);
+  }
+
+  .card:hover{
+    transform:translateY(-8px);
+    border-color:#d4af37;
+    box-shadow:0 10px 30px rgba(212,175,55,0.15);
+  }
+
+  .btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:14px 28px;
+    border:1px solid #d4af37;
+    color:#d4af37;
+    text-decoration:none;
+    transition:0.4s;
+    letter-spacing:1px;
+  }
+
+  .btn:hover{
+    background:#d4af37;
+    color:#0b0b0b;
+  }
+
+  /* COLORS */
+  .orange{color:#ff9b4a;}
+  .grey{color:#b0b0b0;}
+  .gold{color:#d4af37;}
+
+  /* BACKGROUNDS */
+  .bg-orange{background:radial-gradient(circle at top,#1a120d,#0b0b0b);}
+  .bg-grey{background:radial-gradient(circle at top,#151515,#0b0b0b);}
+  .bg-gold{background:radial-gradient(circle at top,#1a1610,#0b0b0b);}
+
+  /* FLOAT HERO */
+  .float{
+    animation:float 5s ease-in-out infinite;
+  }
+
+  @keyframes float{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+  }
+
+  /* FADE */
+  .fade{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s ease;
+  }
+
+  .fade.show{
+    opacity:1;
+    transform:translateY(0);
+  }
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#home">HOME</a>
+  <a href="#orange">ORANGE</a>
+  <a href="#grey">GREY</a>
+  <a href="#gold">GOLD</a>
+  <a href="#handmade">HANDMADE</a>
+  <a href="#order">ORDER</a>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="fade float">
+    <h1>FENDI</h1>
+    <p>VIOLIN CASE · BLACK GOLD · PURE HANDMADE SYSTEM</p>
+  </div>
+</section>
+
+<!-- ORANGE -->
+<section id="orange" class="bg-orange">
+  <div class="fade">
+    <h2 class="orange">ARTISTIC ORANGE</h2>
+    <p>情緒與舞台表達的延伸</p>
+
+    <div class="card">
+      🧡 愛馬仕橘版本<br><br>
+      <b class="orange">NT$ 38,000</b><br>
+      Emotion-driven craftsmanship<br>
+      <a class="btn" href="https://line.me/ti/p/fendi-chang">ORDER</a>
+    </div>
+  </div>
+</section>
+
+<!-- GREY -->
+<section id="grey" class="bg-grey">
+  <div class="fade">
+    <h2 class="grey">PROFESSIONAL GREY</h2>
+    <p>精準與結構導向</p>
+
+    <div class="card">
+      🩶 太空灰版本<br><br>
+      <b class="grey">NT$ 38,000</b><br>
+      Precision performance design<br>
+      <a class="btn" href="https://line.me/ti/p/fendi-chang">ORDER</a>
+    </div>
+  </div>
+</section>
+
+<!-- GOLD -->
+<section id="gold" class="bg-gold">
+  <div class="fade">
+    <h2 class="gold">LUXURY GOLD</h2>
+    <p>身份象徵與限量工藝</p>
+
+    <div class="card">
+      💛 芬迪黃版本<br><br>
+      <b class="gold">NT$ 42,000</b><br>
+      Limited handcrafted edition<br>
+      <a class="btn" href="https://line.me/ti/p/fendi-chang">ORDER</a>
+    </div>
+  </div>
+</section>
+
+<!-- HANDMADE -->
+<section id="handmade">
+  <div class="fade">
+    <h2 class="gold">PURE HANDMADE</h2>
+    <p>
+      每一只琴盒皆為工匠手工製作，非量產產品。  
+      皮革張力、縫線與結構皆獨立調整。
+    </p>
+  </div>
+</section>
+
+<!-- ORDER / SOCIAL -->
+<section id="order">
+  <div class="fade">
+    <h2 class="gold">ORDER</h2>
+    <p>CONTACT FOR PURCHASE & CUSTOM REQUEST</p>
+
+    <a class="btn" href="https://line.me/ti/p/fendi-chang">LINE: fendi-chang</a>
+
+    <p style="margin-top:30px; font-size:13px; color:#999; line-height:2;">
+      CONNECT<br><br>
+
+      LINE: fendi-chang<br>
+      FB: 張絲媛<br>
+      IG: ssuyuan_chang_fendi<br>
+      THREADS: ssuyuan_chang_fendi
+    </p>
+  </div>
+</section>
+
+<script>
+  const items = document.querySelectorAll('.fade');
+
+  function reveal(){
+    const vh = window.innerHeight;
+
+    items.forEach(el=>{
+      const top = el.getBoundingClientRect().top;
+      if(top < vh - 80){
+        el.classList.add('show');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', reveal);
+  window.addEventListener('load', reveal);
+</script>
+
+</body>
+</html>
